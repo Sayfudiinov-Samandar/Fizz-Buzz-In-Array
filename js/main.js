@@ -18,7 +18,9 @@ elForm.addEventListener("submit", function(evt){
     evt.preventDefault();
     var inputValue=Number(elInput.value);
 
-
+    if (inputValue%3!==0 && inputValue%5!==0) {
+        alert("Siz kiritgan son 3 va 5 bo'linmaydi")        
+    }
 
     if (inputValue%3==0 && inputValue%5==0) {
         fizzbuzzarray.push(inputValue);
